@@ -479,15 +479,17 @@
       width: 82px;
       height: 82px;
       border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--blue), #2e67c0);
-      color: var(--yellow);
-      font-family: "Playfair Display", serif;
-      font-size: 1.55rem;
-      font-weight: 800;
+      overflow: hidden;
+      display: block;
       margin-bottom: 0.8rem;
       border: 5px solid rgba(249, 200, 32, 0.35);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
     }
 
     .founder-name {
@@ -765,6 +767,7 @@
     .contact-grid {
       display: grid;
       gap: 1.2rem;
+      align-items: start;
     }
 
     .contact-card {
@@ -1140,7 +1143,9 @@
         <p class="section-subtitle">Coaching Classes for Academic Excellence, built around confidence, clarity, and consistent growth for every child.</p>
         <div class="about-grid">
           <article class="about-card reveal">
-            <div class="avatar" aria-label="Initials RS">RS</div>
+            <div class="avatar">
+              <img loading="lazy" src="https://scontent-del2-1.xx.fbcdn.net/v/t1.6435-1/126136341_10161154077244848_5592115027248268830_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bPVeCQGAuoIQ7kNvwEFwKMM&_nc_oc=AdpBRdM-pxTVmQ5D0COOGUivtnFWhgFxTFWiMQYysbCCSTbxg1dZcEP7OZMgUEemLbRb6P0MDuLdSaAUYGYXsQau&_nc_zt=24&_nc_ht=scontent-del2-1.xx&_nc_gid=ct1bXcqqyH2BlFwaio15Kg&_nc_ss=7a3a8&oh=00_Af3YlJwZS7SnWA27pVqUxu-S7n0qpufcGBJ0MiXQFISnCQ&oe=69F6CC53" alt="Portrait photo of Rohini Singh, founder of Learning Tree Academy" />
+            </div>
             <h3 class="founder-name">Rohini Singh</h3>
             <p class="designation">Founder &amp; Lead Educator</p>
             <p>Rohini Singh brings years of student-centered teaching experience with a strong emphasis on making basics strong before moving to advanced learning. Her classroom style blends discipline with warmth so children stay motivated and fearless in learning.</p>
